@@ -1,0 +1,63 @@
+/* src/components/DiagnosisHistory.css */
+
+.section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.vital-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.vital-card {
+  flex: 1;
+  min-width: 180px;
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.vital-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.vital-card h4 {
+  margin: 2px 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.vital-status {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.vital-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.vital-icon.heart {
+  color: #ef4444;
+}
+
+.vital-icon.respiratory {
+  color: #3b82f6;
+}
+
+.vital-icon.temperature {
+  color: #f59e0b;
+}

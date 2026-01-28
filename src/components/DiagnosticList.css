@@ -1,0 +1,70 @@
+/* src/components/DiagnosticList.css */
+
+.section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.diagnostic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.diagnostic-item {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.diagnostic-item:last-child {
+  border-bottom: none;
+}
+
+.diagnostic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diagnostic-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.diagnostic-description {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.status-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.status-normal {
+  background: #DCFCE7;
+  color: #166534;
+}
+
+.status-warning {
+  background: #FEF9C3;
+  color: #854D0E;
+}
+
+.status-danger {
+  background: #FEE2E2;
+  color: #991B1B;
+}

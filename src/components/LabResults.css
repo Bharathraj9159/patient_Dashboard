@@ -1,0 +1,43 @@
+/* src/components/LabResults.css */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.lab-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lab-table th,
+.lab-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.lab-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.download-icon {
+  text-align: center;
+}
+
+.icon {
+  cursor: pointer;
+  color: #4F46E5;
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: #1E3A8A;
+}

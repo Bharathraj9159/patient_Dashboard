@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background-color: #f7f9fc;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  display: flex;
   min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 280px;
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #457b9d;
+  padding-bottom: 10px;
+}
+
+.patient-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.patient-item {
+  background: #457b9d;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.patient-item:hover {
+  background: #a8dadc;
+  color: #1d3557;
+}
+
+.patient-item.active {
+  background: #f1faee;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+.patient-name {
+  font-size: 16px;
+}
+
+.patient-gender {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+.patient-header {
+  text-align: left;
+  border-left: 5px solid #1d3557;
+}
+
+.chart-card {
+  background: #fefefe;
+}
+
+/* ===== Lab Table ===== */
+.lab-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lab-table th,
+.lab-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.lab-table th {
+  background: #457b9d;
+  color: #fff;
+}
+
+.status-normal {
+  color: green;
+  font-weight: bold;
+}
+
+.status-alert {
+  color: red;
+  font-weight: bold;
+}
+
+/* ===== Loading ===== */
+.loading {
+  color: #1d3557;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 100px;
+}
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f8;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.2rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+/* Patient Info Header */
+.patient-header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.patient-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 25px;
+  border: 3px solid #e0e0e0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.patient-details h2 {
+  margin: 0;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.patient-details p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.icon {
+  color: #3b82f6;
+  vertical-align: middle;
+}
+
+.patient-notes {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.app {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f9fb;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 40px;
+  overflow-y: auto;
+}
+
+.patient-header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
